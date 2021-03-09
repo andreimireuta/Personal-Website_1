@@ -406,8 +406,10 @@ section{
 
  /*-------------------------------Contact section start here*/
  .contact .about-me::after{
-    content: "contact me";
+    content: "get in touch";
  }
+
+
 
 
 /*------------------------------------Responsive query start------------------------------*/
