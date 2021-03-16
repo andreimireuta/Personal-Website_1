@@ -154,7 +154,7 @@ section{
     background:mintcream;
 }
 
- .about, .services, .skills{
+ .about, .services, .skills, .contact {
     font-family: 'Roboto' , sans-serif;
  }
 
@@ -267,7 +267,8 @@ section{
 }
 
 .services .services-content,
-.skills .skills-content{
+.skills .skills-content,
+.contact .contact-content{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -326,13 +327,13 @@ section{
     width: calc(50% - 30px);
 }
 
-.skills-content .left .text{
+.skills-content .left .text, .contact .left .text{
     font-size: 25px;
     font-weight: 600;
     margin-bottom: 12px;
 }
 
-.skills-content .left p{
+.skills-content .left p, .contact .left p, .contact .info{
     font-weight: 500;
     text-align: justify;
 }
@@ -409,7 +410,102 @@ section{
     content: "get in touch";
  }
 
+.contact .column{
+    width: calc(50% - 20px);
+}
 
+.contact .column p{
+    margin-bottom: 25px;
+}
+
+.contact .contact-content .text{
+    margin-bottom:20px;
+    font-weight: 600;
+    align-items: center;
+}
+
+.contact-content .icons{
+    margin: 10px 0;
+}
+.contact-content .row{
+    display: flex;
+    height: 60px;
+}
+
+.contact-content .info{
+    margin-left: 25px;
+} 
+
+.contact-content .row i{
+    color: sienna;
+    font-size: 25px;
+}
+.contact-content .info .name{
+    font-weight: 800;
+}
+
+.contact-content .info .actual-name{
+    font-weight: 500;
+    color:rgb(68, 57, 57);
+}
+
+.contact form .fields{
+    display: flex;
+}
+
+.contact form .fields,
+.contact form .field{
+    height: 48px;
+    width: 100%;
+    margin-bottom: 16px;
+}
+.contact .name{
+    margin-right: 14px;
+}
+.contact .right form  .subject-message{
+    height: 140px;
+}
+.contact .right .field input,
+.contact .right .subject-message textarea{
+    font-size: 15px;
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    outline: none;
+    padding: 0 12px;
+    font-family: 'Ubuntu',sans-serif;
+}
+.contact .right form  .subject-message textarea{
+    resize: none;
+    padding-top: 12px;
+    padding-left: 15px;
+}
+.contact .right .text{
+    font-size: 20px;
+    text-align: left;
+}
+.contact{
+    /*background-color: rgb(17, 17, 17);*/
+}
+.button button{ 
+    font-size: 18px;
+    background:sienna;
+    color: #fff;
+    font-size: 18px;
+    padding: 12px 36px;
+    margin-top: 20px;
+    font-weight: 600;
+    border-radius: 10px;
+    border: 2px solid sienna;
+    cursor: pointer;
+    transition: all 0.35s ease; 
+}
+.button button:hover{
+    color: sienna;
+    background: none;
+}
+}
 
 
 /*------------------------------------Responsive query start------------------------------*/
@@ -500,7 +596,8 @@ section{
         width: calc(50% - 10px);
         margin-bottom: 10px;
     }
-    .skills .skills-content .column{
+    .skills .skills-content .column,
+    .contact .contact-content .column{
         width: 100%;
         margin-bottom:  15px;
 
