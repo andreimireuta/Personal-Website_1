@@ -485,9 +485,9 @@ section{
     font-size: 20px;
     text-align: left;
 }
-.contact{
-    /*background-color: rgb(17, 17, 17);*/
-}
+/*.contact{
+    /*background-color: rgb(17, 17, 17);
+}*/
 .button button{ 
     font-size: 18px;
     background:sienna;
@@ -505,8 +505,51 @@ section{
     color: sienna;
     background: none;
 }
+/*---------------------------------------------Footer section--------------------------------*/
+footer{
+    font-family: 'Ubuntu',sans-serif;
+    font-weight: 400;
+    background: #111;
+    padding: 40px 40px;
+    color: #fff;
+    text-align: center;
 }
 
+footer span a{
+    color: sienna;
+    text-decoration: none;
+}
+footer span a:hover{
+    text-decoration: underline;
+    font-size: 18px;
+    transition: all 1.5s ease;
+}
+
+/*--------------------------------------Scroll up button*/
+.scroll-button{
+    position: fixed;
+    background: sienna;
+    height: 50px;
+    width: 48px;
+    right: 35px;
+    left:88%;
+    top:90%;
+    text-align: center;
+    line-height: 50px; /*folosit pentru a pune pe mijloc sageata de scroll up*/
+    color: #fff;
+    z-index: 9999;
+    border-radius: 10px;
+    font-size: 35px;
+    cursor: pointer;
+    transition: all 0.55s ease;
+    pointer-events: none;
+    opacity: 0;
+}
+.scroll-button.show{
+    bottom: 30px;
+    opacity: 1;
+    pointer-events: auto;
+}
 
 /*------------------------------------Responsive query start------------------------------*/
 @media(max-width:1300px){
