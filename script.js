@@ -16,10 +16,27 @@ $(document).ready(function(){
     $('.scroll-button').click(function(){
         $('html').animate({scrollTop: 0});
     });
+
+    // typing animation script
+    var typed = new Typed(".typing", {
+        strings: ["Student","WebDeveloper","Freelancer"],
+        typeSpeed : 100,
+        backSpeed : 60,
+        loop: true
+    });
     
     //toggle menu/navbar script
     $('.menu-btn').click(function(){
         $('.navbar .menu').toggleClass("active");
         $('.menu-btn i').toggleClass("active");
     });
+
+    // typing animation script
+    var typed = new Typed(".typing2", {
+        strings: ["Student","WebDeveloper","Freelancer","Designer"],
+        typeSpeed : 100,
+        backSpeed : 60,
+        loop: true
+    });
+    
 });

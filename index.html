@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Website</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typescript/2.0.11/typescript.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typescript/2.0.11/typescript.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
@@ -42,8 +45,8 @@
             <div class="home-content">
                 <div class="text-1">Hello, my name is</div>
                 <div class="text-2">Andrei Mireuta</div>
-                <div class="text-3">And I'm a <span>Web Developer</span></div>
-                <a href="#">See me</a>
+                <div class="text-3">And I'm a <span class="typing"></span></div>
+                <a href="https://github.com/andreimireuta" target="_blank">See my work</a>
             </div>
         </div>
     </section>
@@ -58,7 +61,7 @@
                 </div>
                 <div class="column right">
                     <div class="text">
-                        I'm Andrei and i am a <span> Web Developer</span></div>
+                        I'm Andrei and i am a <span class="typing2"> </span></div>
                         <p>I'm Andrei, I'm 21 years old and I'm a third year student at the Faculty of Informatics. I am passionate about always learning new things and constantly learning.
                             I consider myself a responsible, mature person who knows how to take on his own deeds.
                             I am a persevering and bold boy and I like to know that I always give my best to face the challenges.
@@ -191,7 +194,8 @@
 
                 <div class="column right">
                     <div class="text"> Message me</div>
-                    <form action="#">
+                    <form action="mailto:andreimireutam@gmail.com" method="POST" enctype="multipart/form-data"
+                    name="emailForm">
                         <div class="fields">
                             <div class="field name">
                                 <input type="text" name="name" id="name" placeholder="  Name" required>
